@@ -156,6 +156,7 @@ main {
 }
 .be {
   color: white;
+  margin-right: 10px;
   text-decoration: underline;
 }
 .be:hover {
@@ -189,6 +190,11 @@ footer {
   margin: 0 auto;
 }
 
+.contact h2,
+p {
+  line-height: 1.4;
+}
+
 .contact-info {
   width: 70%;
   padding: 20px 0;
@@ -214,4 +220,50 @@ textarea {
 .contact-form label {
   font-weight: bold;
   text-align: left;
+}
+
+/* Media queries */
+@media (max-width: 480px) {
+  * {
+    font-size: 1rem;
+  }
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .contact-info {
+    display: none;
+  }
+  .contact-form {
+    margin: 0 auto;
+    flex-basis: 100%;
+  }
+  footer {
+    /* display: block; */
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+  .ft-content ul {
+    display: none;
+  }
+  .none {
+    display: none;
+  }
+  .logo-img {
+    display: block;
+    width: 80%;
+  }
+  .nav-btns {
+    display: none;
+  }
+  .to-left {
+    display: none;
+  }
+  main {
+    overflow: hidden;
+  }
 }
